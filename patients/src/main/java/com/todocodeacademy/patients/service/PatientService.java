@@ -3,10 +3,12 @@ package com.todocodeacademy.patients.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.todocodeacademy.patients.model.Patient;
 import com.todocodeacademy.patients.repository.IPatientRepository;
 
+@Service
 public class PatientService implements ICrudService<Patient>{
 
 	@Autowired 
