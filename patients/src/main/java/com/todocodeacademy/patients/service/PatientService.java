@@ -9,8 +9,9 @@ import com.todocodeacademy.patients.model.Patient;
 import com.todocodeacademy.patients.repository.IPatientRepository;
 
 @Service
-public class PatientService implements ICrudService<Patient>{
+public class PatientService implements IPatientService{
 
+	//inyección de dependencias para acceder a los métodos de JPA con el repositorio
 	@Autowired 
 	private IPatientRepository patientRepository;
 	
@@ -35,8 +36,14 @@ public class PatientService implements ICrudService<Patient>{
 	}
 
 	@Override
-	public void edit(Patient pat) {
+	public void edit(Long id, Patient pat) {
 		this.save(pat);
+	}
+
+	//complete
+	@Override
+	public Patient findByNationalIdNumber(String nationalIdNumber) {
+		return null;
 	}
 
 }
