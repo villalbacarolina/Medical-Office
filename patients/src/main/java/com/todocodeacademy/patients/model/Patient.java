@@ -1,9 +1,12 @@
 package com.todocodeacademy.patients.model;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Temporal;
+import jakarta.persistence.TemporalType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import lombok.Getter;
@@ -19,13 +22,14 @@ public class Patient {
 	private String nationalIDnumber;
 	private String firstName;
 	private String lastName;
-	private Date dateOfBirth;
+	@Temporal(TemporalType.DATE)
+	private LocalDate dateOfBirth;
 	private String phoneNumber;
 	
 	public Patient() {
 	}
 
-	public Patient(Long idPatient, String nationalIDnumber, String firstName, String lastName, Date dateOfBirth,
+	public Patient(Long idPatient, String nationalIDnumber, String firstName, String lastName, LocalDate dateOfBirth,
 			String phoneNumber) {
 		this.idPatient = idPatient;
 		this.nationalIDnumber = nationalIDnumber;
