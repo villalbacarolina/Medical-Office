@@ -1,13 +1,13 @@
-package com.todocodeacademy.pacientes;
+package com.todocodeacademy.patients;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PacientesApplication {
+public class PatientsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PacientesApplication.class, args);
+		SpringApplication.run(PatientsApplication.class, args);
 	}
 
 }

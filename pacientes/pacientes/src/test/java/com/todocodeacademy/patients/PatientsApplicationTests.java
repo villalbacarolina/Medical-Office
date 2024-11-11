@@ -1,10 +1,10 @@
-package com.todocodeacademy.pacientes;
+package com.todocodeacademy.patients;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PacientesApplicationTests {
+class PatientsApplicationTests {
 
 	@Test
 	void contextLoads() {
