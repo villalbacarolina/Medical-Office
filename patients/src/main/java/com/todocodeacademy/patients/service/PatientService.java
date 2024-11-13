@@ -11,7 +11,6 @@ import com.todocodeacademy.patients.repository.IPatientRepository;
 @Service
 public class PatientService implements IPatientService{
 
-	//inyección de dependencias para acceder a los métodos de JPA con el repositorio
 	@Autowired 
 	private IPatientRepository patientRepository;
 	
